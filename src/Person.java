@@ -1,8 +1,27 @@
 public class Person {
-    String name;
-    int age;
-    int heght;
-    int energy;
+    private String name;
+    private int age;
+    private int heght;
+    private int energy;
+
+    public int getHeght() {
+        return heght;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getEnergy() {
+        return energy;
+    }
+
+    public Person(String name, int age, int heght, int energy) {
+        this.name = name;
+        this.age = age;
+        this.heght = heght;
+        this.energy = energy;
+    }
 
     public void run() {
         energy--;
@@ -19,12 +38,12 @@ public class Person {
 //        } else {
 //            return false; // se poate si fara else
         }
-    }
-//    public String getName() {
+
+    //    public String getName() {
 //        return name;
 //    }
 //
-//    public int getAge() {
-//        return age;
-//    }
-//}
+    public int getAge() {
+        return age;
+    }
+}
